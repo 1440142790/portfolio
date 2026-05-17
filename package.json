@@ -3,16 +3,9 @@
   "version": "1.0.0",
   "description": "Professional photography and videography portfolio website",
   "scripts": {
-    "dev": "npx serve -l 3000",
-    "build": "echo 'Static site - no build required'",
-    "preview": "npx serve -l 3000"
+    "start": "npx serve -l 3000"
   },
-  "keywords": [
-    "portfolio",
-    "photography",
-    "videography",
-    "personal-website"
-  ],
+  "keywords": ["portfolio", "photography", "videography"],
   "author": "Visual Artist",
   "license": "MIT"
 }
