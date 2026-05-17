@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视觉艺术家 | 摄影摄像作品集</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-logo">VISUAL<span>ARTIST</span></div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">首页</a></li>
+            <li><a href="#about">关于</a></li>
+            <li><a href="#gallery">作品集</a></li>
+            <li><a href="#videos">影像</a></li>
+            <li><a href="#contact">联系</a></li>
+        </ul>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero 区域 -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">视觉艺术家</div>
+            <h1 class="hero-title">
+                <span class="title-line">捕捉光影</span>
+                <span class="title-line">定格永恒</span>
+            </h1>
+            <p class="hero-subtitle">专业摄影 · 创意摄像 · 视觉艺术</p>
+            <div class="hero-cta">
+                <a href="#gallery" class="btn btn-primary">探索作品</a>
+                <a href="#contact" class="btn btn-outline">预约咨询</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>向下滚动</span>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">ABOUT ME</span>
+                <h2 class="section-title">关于我</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="assets/images/1.jpg" alt="个人照片" loading="lazy">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-label">年经验</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">项目</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">客户</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>用镜头讲述故事</h3>
+                    <p>我是一名专注于人像摄影和创意影像的视觉艺术家。8年来，我用镜头捕捉无数动人的瞬间，从婚纱写真到商业广告，从纪录片到创意短片。</p>
+                    <p>我的理念是：每一次快门都是一次艺术的创作。每一张照片、每一段视频，都是情感与技术的完美融合。</p>
+                    <div class="about-skills">
+                        <span class="skill-tag">人像摄影</span>
+                        <span class="skill-tag">商业摄影</span>
+                        <span class="skill-tag">视频拍摄</span>
+                        <span class="skill-tag">后期制作</span>
+                        <span class="skill-tag">创意策划</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集 -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">PORTFOLIO</span>
+                <h2 class="section-title">摄影作品</h2>
+            </div>
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="portrait">人像</button>
+                <button class="filter-btn" data-filter="fashion">时尚</button>
+                <button class="filter-btn" data-filter="art">艺术</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="portrait">
+                    <img src="assets/images/1.jpg" alt="人像作品1" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">人像摄影</span>
+                        <h4>光影交织</h4>
+                        <button class="gallery-view">查看大图</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="fashion">
+                    <img src="assets/images/2.jpg" alt="时尚作品1" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">时尚摄影</span>
+                        <h4>都市魅影</h4>
+                        <button class="gallery-view">查看大图</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="art">
+                    <img src="assets/images/3.jpg" alt="艺术作品1" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">艺术摄影</span>
+                        <h4>梦幻边界</h4>
+                        <button class="gallery-view">查看大图</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="portrait">
+                    <img src="assets/images/4.jpg" alt="人像作品2" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">人像摄影</span>
+                        <h4>静谧时光</h4>
+                        <button class="gallery-view">查看大图</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="fashion">
+                    <img src="assets/images/5.jpg" alt="时尚作品2" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">时尚摄影</span>
+                        <h4>潮流先锋</h4>
+                        <button class="gallery-view">查看大图</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 视频作品 -->
+    <section id="videos" class="videos">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-tag">VIDEO WORKS</span>
+                <h2 class="section-title">影像作品</h2>
+            </div>
+            <div class="video-grid">
+                <div class="video-item">
+                    <div class="video-wrapper">
+                        <video class="video-preview" preload="auto" autoplay muted loop playsinline>
+                            <source src="assets/videos/1.mp4" type="video/mp4">
+                            您的浏览器不支持视频播放
+                        </video>
+                        <div class="video-play">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h4>创意短片《光影之旅》</h4>
+                        <p>4K超清 | 2024年最新作品</p>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="video-wrapper">
+                        <video class="video-preview" preload="auto" autoplay muted loop playsinline>
+                            <source src="assets/videos/2.mp4" type="video/mp4">
+                            您的浏览器不支持视频播放
+                        </video>
+                        <div class="video-play">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h4>纪录片《城市故事》</h4>
+                        <p>1080P | 人文纪实</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">CONTACT</span>
+                <h2 class="section-title">联系我</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <span class="contact-label">邮箱</span>
+                            <span class="contact-value">hello@visualartist.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <span class="contact-label">电话</span>
+                            <span class="contact-value">+86 138-0000-0000</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <span class="contact-label">位置</span>
+                            <span class="contact-value">中国 · 上海</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="微信">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8.5 12.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5.5 3c-1.5 0-2.9-.4-4-1.1l-.7.7c1.2.9 2.7 1.4 4.3 1.4 1.6 0 3.1-.5 4.3-1.4l-.7-.7c-1.1.7-2.5 1.1-4 1.1zm-11-4c-1.5 0-2.9-.4-4-1.1l-.7.7c1.2.9 2.7 1.4 4.3 1.4 1.6 0 3.1-.5 4.3-1.4l-.7-.7c-1.1.7-2.5 1.1-4 1.1z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="微博">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M10.098 20.323c-3.977.391-7.414-1.406-7.672-4.02-.259-2.609 2.759-5.047 6.74-5.441 3.979-.394 7.413 1.404 7.671 4.018.259 2.6-2.757 5.049-6.739 5.443zM9.05 17.219c-.384.616-1.208.884-1.829.602-.612-.279-.793-.991-.406-1.593.379-.595 1.176-.861 1.793-.601.622.263.82.972.442 1.592zm1.27-1.627c-.141.237-.449.353-.689.253-.236-.09-.313-.361-.177-.586.138-.227.436-.346.672-.24.239.09.315.36.194.573zm.176-2.719c-1.893-.493-4.033.45-4.857 2.118-.836 1.704-.026 3.591 1.886 4.21 1.983.64 4.318-.341 5.132-2.179.8-1.793-.201-3.642-2.161-4.149zm7.563-1.224c-.346-.105-.578-.18-.401-.649.386-1.029.422-1.925-.001-2.566-.792-1.197-2.942-1.189-5.346-.279-3.149 1.187-5.141 1.076-5.94.04-.421-.548-.336-1.304.17-1.568.621-.324 1.83-.299 2.962-.076.195.039.372.079.51.079.138 0 .315-.04.51-.079 2.263-.445 4.017-.184 5.22.779.602.481.949 1.1 1.037 1.868.055.47-.027.926-.199 1.364-.18.462-.482.858-.865 1.166-.383.309-.847.541-1.367.702-.521.162-1.079.236-1.638.192-.559-.044-1.109-.211-1.599-.477-.49-.266-.923-.632-1.272-1.073-.349-.441-.63-.947-.839-1.51-.209.563-.489 1.069-.839 1.51-.349.441-.782.807-1.272 1.073-.49.266-1.04.433-1.599.477-.559.044-1.117-.03-1.638-.192-.521-.161-.984-.393-1.367-.702-.384-.308-.686-.704-.865-1.166-.172-.438-.254-.894-.199-1.364.088-.768.435-1.387 1.037-1.868 1.203-.963 2.957-1.224 5.22-.779.195.039.372.079.51.079.138 0 .315-.04.51-.079 1.132-.223 2.341-.248 2.962.076.506.264.591 1.02.17 1.568-.799 1.036-2.791 1.147-5.94-.04-2.404-.91-4.554-.918-5.346.279-.423.641-.387 1.537-.001 2.566.177.469-.055.544-.401.649-1.03.313-1.688 1.348-1.597 2.51.091 1.161.945 2.126 2.075 2.337 1.131.211 2.326-.235 2.905-.995.354-.465.585-1.014.694-1.62.11.606.34 1.155.694 1.62.579.76 1.774 1.206 2.905.995 1.13-.211 1.984-1.176 2.075-2.337.091-1.162-.567-2.197-1.597-2.51z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="小红书">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-6h-2v6zm0-8h2V7h-2v2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">您的姓名</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">邮箱地址</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <label for="message">留言内容</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <span>发送消息</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"/>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">VISUAL<span>ARTIST</span></span>
+                    <p>用镜头记录美好，用影像传递情感</p>
+                </div>
+                <div class="footer-copy">
+                    <p>&copy; 2024 Visual Artist. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button class="back-to-top" id="backToTop" aria-label="回到顶部">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"/>
+        </svg>
+    </button>
+
+    <!-- 图片灯箱 -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="关闭">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+        </button>
+        <img class="lightbox-image" src="" alt="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
